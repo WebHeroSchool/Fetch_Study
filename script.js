@@ -1,10 +1,4 @@
-//let login = prompt('Введите логин');
-
 let login = window.location.search.split('=')[1] || 'Alexandr886';
-
-console.log(window.location.search);
-console.log(window.location.search.split('='));
-console.log(login);
 
 fetch(`https://api.github.com/users/${login}`)
   .then(res => res.json())
